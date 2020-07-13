@@ -58,16 +58,19 @@ Modify the training settings for specific model in [configs](configs) floder. No
     python test_denoising_SIDD.py --model DANet
 ```
 <img src="./figs/DANet_denoising.png" align=center />
+
 + Test DANet+
 ```
     python test_denoising_SIDD.py --model DANet+
 ```
 <img src="./figs/DANet+_denoising.png" align=center />
+
 + Test GDANet
 ```
     python test_denoising_DND.py --model GDANet
 ```
 <img src="./figs/GDANet_denoising.png" align=center />
+
 + Test GDANet+
 ```
     python test_denoising_DND.py --model GDANet+ 
@@ -80,6 +83,7 @@ Modify the training settings for specific model in [configs](configs) floder. No
     python test_generation_SIDD.py
 ```
 <img src="./figs/DANet_generation.png" align=center />
+
 + Test GDANet
 ```
     python test_generation_arbitrary.py
