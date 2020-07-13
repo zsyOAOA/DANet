@@ -1,0 +1,36 @@
+{
+    # training settings
+    "batch_size": 32, 
+    "patch_size": 128, 
+    "epochs": 70,
+    "lr_D": 2e-4,
+    "print_freq": 100,
+    "num_workers": 4, 
+    "gpu_id": 0,
+    "resume": "",
+    "milestones": [20, 30, 40, 50, 55, 60, 65],
+    "weight_decay": 0,
+
+    ######### network architecture #####################
+    # number of filters of the first convolution in UNet
+    "wf": 32,   
+    # depth of UNet
+    "depth": 5, 
+
+    ######### training and validation data path ########
+    "SIDD_train_h5": "/ssd1t/SIDD/small_imgs_train.hdf5", 
+    "SIDD_test_h5": "/ssd1t/SIDD/small_imgs_test.hdf5", 
+
+    ######### path of the pretrained generator ########
+    "pretrain": "./model_states/DANet.pt",
+
+    ######### fake ratio: fake/real ###################
+    "fake_ratio": 0.25,
+
+    ######### gradient clipping #######################
+    "clip_normD": 1e4,
+
+    ############# saving models and logs ##############
+    "model_dir": "./models_DANetPlus",
+    "log_dir": "./logs_DANetPlus"
+}

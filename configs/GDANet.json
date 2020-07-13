@@ -1,0 +1,42 @@
+{
+    # training settings
+    "batch_size": 16, 
+    "patch_size": 128, 
+    "epochs": 70,
+    "lr_D": 1e-4,
+    "lr_G": 1e-4,
+    "lr_P": 2e-4,
+    "print_freq": 100,
+    "num_workers": 4, 
+    "gpu_id": 0,
+    "resume": "",
+    "milestones": [20, 30, 40, 50, 60, 65, 70],
+    "weight_decay": 0,
+
+    ############### network architecture ###############
+    # number of filters of the first convolution in UNet
+    "wf": 32,   
+    # depth of UNet
+    "depth": 5, 
+    # number of filters of the first convolution in Discriminator
+    "ndf": 64,  
+
+    ######### training and validation data path ########
+    "Poly_dir": "/ssd1t/PolyU", 
+    "Renoir_train_h5": "/ssd1t/Renoir/small_imgs_all.hdf5", 
+    "SIDD_train_h5": "/ssd1t/SIDD/small_imgs_train.hdf5", 
+    "SIDD_test_h5": "/ssd1t/SIDD/small_imgs_test.hdf5", 
+
+    # saving models and logs
+    "model_dir": "./models_GDANet",
+    "log_dir": "./logs_GDANet",
+
+    ########### hyper-parameters of our model ##########
+    "alpha": 0.5,
+    # kernel size for the Gauss filter in loss function
+    "ksize": 5,
+    "lambda_gp": 10,
+    "tau_D": 1000,
+    "tau_G": 10,
+    "num_critic": 3
+}
