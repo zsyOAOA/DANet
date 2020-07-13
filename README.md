@@ -8,7 +8,7 @@ And the arXiv version includes the complete experimental results.
 # Requirements and Dependencies
 * Ubuntu 16.04, cuda 10.0
 * Python 3.7.4, Pytorch 1.3.1
-* More detail (See environment.yml)
+* More detail (See [environment.yml](environment.yml))
 
 # Training pipelines
 
