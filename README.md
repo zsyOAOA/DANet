@@ -59,7 +59,9 @@ Modify the training settings for specific model in [configs](configs) floder. No
 ```
 <img src="./figs/DANet_denoising.png" align=center />
 
-To re-produce the paper results on the SIDD validation data set, please refer to test_denoising_SIDD_val.py. 
+To re-produce the paper results on the SIDD validation data set, please refer to [test_denoising_SIDD_val.py](test_denoising_SIDD_val.py). 
+
+To re-produce the paper results on the SIDD Benchmark of officail website, please refer to [DANetPlus_SIDD_test.py](DANetPlus_SIDD_test.py). 
 
 + Test DANet+
 ```
